@@ -39,10 +39,6 @@ struct secondPage: View {
         
         
     }
+
 }
 
-struct secondPage_Previews: PreviewProvider {
-    static var previews: some View {
-        secondPage()
-    }
-}
