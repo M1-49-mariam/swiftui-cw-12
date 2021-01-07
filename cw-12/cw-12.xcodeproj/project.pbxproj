@@ -12,6 +12,7 @@
 		BD1499CC25A76D5E00A32480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1499CB25A76D5E00A32480 /* Assets.xcassets */; };
 		BD1499CF25A76D5E00A32480 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1499CE25A76D5E00A32480 /* Preview Assets.xcassets */; };
 		BD1499D825A76F7E00A32480 /* secondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1499D725A76F7E00A32480 /* secondPage.swift */; };
+		BD90098925A78A920049A6E2 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90098825A78A920049A6E2 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BD1499CE25A76D5E00A32480 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD1499D025A76D5E00A32480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD1499D725A76F7E00A32480 /* secondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondPage.swift; sourceTree = "<group>"; };
+		BD90098825A78A920049A6E2 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				BD1499C725A76D5A00A32480 /* cw_12App.swift */,
 				BD1499C925A76D5A00A32480 /* ContentView.swift */,
+				BD90098825A78A920049A6E2 /* test.swift */,
 				BD1499D725A76F7E00A32480 /* secondPage.swift */,
 				BD1499CB25A76D5E00A32480 /* Assets.xcassets */,
 				BD1499D025A76D5E00A32480 /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1499D825A76F7E00A32480 /* secondPage.swift in Sources */,
+				BD90098925A78A920049A6E2 /* test.swift in Sources */,
 				BD1499CA25A76D5A00A32480 /* ContentView.swift in Sources */,
 				BD1499C825A76D5A00A32480 /* cw_12App.swift in Sources */,
 			);
