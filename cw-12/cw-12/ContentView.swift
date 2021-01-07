@@ -23,17 +23,18 @@ struct ContentView: View {
                 .padding(.bottom, 50) .foregroundColor(.blue) .font(.title)
             
             Button(action: {
-                isMentor .toggle()
-            } , label: {
+            isMentor.toggle()
+            })  {
                 Text("ادخل بياناتك")
                     .font(.title)
                     .foregroundColor(.white) .padding()
                     .background(Color.blue.opacity(0.7))
                     .clipShape(RoundedRectangle(cornerRadius: 15))
-            })
-            .sheet(isPresented: $isMentor)
-            secondPage(name: $name, age: $age, phone: $phone)
+            } .sheet(isPresented: $isMentor){
+            
+                secondPage(name: $name, age: $age, phone: $phone)}
         }
+        
         if name != "" {
             HStack {
                 Spacer()
