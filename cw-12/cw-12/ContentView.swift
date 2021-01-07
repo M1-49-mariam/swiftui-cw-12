@@ -7,8 +7,16 @@
 
 import SwiftUI
 
+class Env :ObservableObject{
+    @Published var variable = "value"
+    @Published var name: String = ""
+    @Published var phone: String = ""
+    @Published var age: String = ""
+    @Published var isMentor = false
+}
+
 struct ContentView: View {
-    
+    @EnvironmentObject var env: Env
     
     @State var name = ""
     @State var phone = ""
@@ -19,7 +27,7 @@ struct ContentView: View {
     var body: some View {
        
         VStack {
-            Text("مرحبا بك في الكويت")
+            Text("مرحبا بك في الكويت تبرمج")
                 .padding(.bottom, 50) .foregroundColor(.blue) .font(.title)
             
             Button(action: {
@@ -30,7 +38,7 @@ struct ContentView: View {
                     .foregroundColor(.white) .padding()
                     .background(Color.blue.opacity(0.7))
                     .clipShape(RoundedRectangle(cornerRadius: 15))
-            } .sheet(isPresented: $isMentor){
+            } .sheet(isPresented: $env.isMentor){
             
                 secondPage(name: $name, age: $age, phone: $phone)}
         }
