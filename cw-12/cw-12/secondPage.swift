@@ -19,9 +19,9 @@ struct secondPage: View {
         
         VStack {
             VStack(alignment: .center, spacing: 40){
-                Text("الاسم : \(name)")
-                Text("العمر : \(age)")
-                Text("الهاتف : \(phone)")
+                TextField("الاسم : \(name)", text: $name)
+                TextField("العمر : \(age)", text: $age)
+                TextField("الهاتف : \(phone)", text: $phone)
                 
             } .padding()
             .font(.title)
@@ -39,6 +39,5 @@ struct secondPage: View {
         
         
     }
-
 }
 
