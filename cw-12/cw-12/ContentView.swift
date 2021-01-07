@@ -17,7 +17,6 @@ class Env :ObservableObject{
 
 struct ContentView: View {
     @EnvironmentObject var env: Env
-    
     @State var name = ""
     @State var phone = ""
     @State var age = ""
